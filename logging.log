@@ -1,0 +1,185 @@
+2016-12-11 18:53:37 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-11 18:53:37 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 192.168.1.32 instead (on interface en1)
+2016-12-11 18:53:37 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-12-11 19:31:04 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-11 19:31:04 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 192.168.1.32 instead (on interface en1)
+2016-12-11 19:31:04 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-12-11 19:41:40 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-11 19:41:40 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 192.168.1.32 instead (on interface en1)
+2016-12-11 19:41:40 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-12-11 19:41:55 ERROR Executor:91 - Exception in task 0.0 in stage 2.0 (TID 80)
+java.lang.NumberFormatException: For input string: "latitude"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at sst.<init>(sst.java:26)
+	at readCSV$1.call(readCSV.java:45)
+	at readCSV$1.call(readCSV.java:42)
+	at org.apache.spark.api.java.JavaPairRDD$$anonfun$toScalaFunction$1.apply(JavaPairRDD.scala:1028)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.util.Utils$.getIteratorSize(Utils.scala:1765)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:86)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 19:41:55 ERROR Executor:91 - Exception in task 1.0 in stage 2.0 (TID 81)
+java.lang.NumberFormatException: For input string: "null"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at sst.<init>(sst.java:34)
+	at readCSV$1.call(readCSV.java:45)
+	at readCSV$1.call(readCSV.java:42)
+	at org.apache.spark.api.java.JavaPairRDD$$anonfun$toScalaFunction$1.apply(JavaPairRDD.scala:1028)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.util.Utils$.getIteratorSize(Utils.scala:1765)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:86)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 19:41:55 WARN  TaskSetManager:66 - Lost task 0.0 in stage 2.0 (TID 80, localhost): java.lang.NumberFormatException: For input string: "latitude"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at sst.<init>(sst.java:26)
+	at readCSV$1.call(readCSV.java:45)
+	at readCSV$1.call(readCSV.java:42)
+	at org.apache.spark.api.java.JavaPairRDD$$anonfun$toScalaFunction$1.apply(JavaPairRDD.scala:1028)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.util.Utils$.getIteratorSize(Utils.scala:1765)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:86)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-11 19:41:55 ERROR TaskSetManager:70 - Task 0 in stage 2.0 failed 1 times; aborting job
+2016-12-11 19:41:55 WARN  TaskSetManager:66 - Lost task 1.0 in stage 2.0 (TID 81, localhost): java.lang.NumberFormatException: For input string: "null"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at sst.<init>(sst.java:34)
+	at readCSV$1.call(readCSV.java:45)
+	at readCSV$1.call(readCSV.java:42)
+	at org.apache.spark.api.java.JavaPairRDD$$anonfun$toScalaFunction$1.apply(JavaPairRDD.scala:1028)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.util.Utils$.getIteratorSize(Utils.scala:1765)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:86)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-11 19:43:15 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-11 19:43:15 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 192.168.1.32 instead (on interface en1)
+2016-12-11 19:43:15 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-12-11 19:47:24 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-11 19:47:24 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 192.168.1.32 instead (on interface en1)
+2016-12-11 19:47:24 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-12-11 19:47:38 ERROR Executor:91 - Exception in task 0.0 in stage 2.0 (TID 80)
+java.lang.NumberFormatException: For input string: "null"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at sst.<init>(sst.java:32)
+	at readCSV$1.call(readCSV.java:46)
+	at readCSV$1.call(readCSV.java:42)
+	at org.apache.spark.api.java.JavaPairRDD$$anonfun$toScalaFunction$1.apply(JavaPairRDD.scala:1028)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.util.Utils$.getIteratorSize(Utils.scala:1765)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:86)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 19:47:38 WARN  TaskSetManager:66 - Lost task 0.0 in stage 2.0 (TID 80, localhost): java.lang.NumberFormatException: For input string: "null"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at sst.<init>(sst.java:32)
+	at readCSV$1.call(readCSV.java:46)
+	at readCSV$1.call(readCSV.java:42)
+	at org.apache.spark.api.java.JavaPairRDD$$anonfun$toScalaFunction$1.apply(JavaPairRDD.scala:1028)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.util.Utils$.getIteratorSize(Utils.scala:1765)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:86)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-11 19:47:38 ERROR TaskSetManager:70 - Task 0 in stage 2.0 failed 1 times; aborting job
+2016-12-11 19:47:38 ERROR Executor:91 - Exception in task 1.0 in stage 2.0 (TID 81)
+java.lang.NumberFormatException: For input string: "null"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at sst.<init>(sst.java:34)
+	at readCSV$1.call(readCSV.java:46)
+	at readCSV$1.call(readCSV.java:42)
+	at org.apache.spark.api.java.JavaPairRDD$$anonfun$toScalaFunction$1.apply(JavaPairRDD.scala:1028)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.util.Utils$.getIteratorSize(Utils.scala:1765)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.rdd.RDD$$anonfun$count$1.apply(RDD.scala:1134)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1899)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:70)
+	at org.apache.spark.scheduler.Task.run(Task.scala:86)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:274)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 19:52:16 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-11 19:52:17 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 192.168.1.32 instead (on interface en1)
+2016-12-11 19:52:17 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-12-11 19:58:13 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-11 19:58:14 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 192.168.1.32 instead (on interface en1)
+2016-12-11 19:58:14 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-12-11 20:10:50 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-11 20:10:50 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 192.168.1.32 instead (on interface en1)
+2016-12-11 20:10:50 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-12-11 20:13:50 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-11 20:13:50 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 192.168.1.32 instead (on interface en1)
+2016-12-11 20:13:50 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-12-11 20:16:22 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-11 20:16:22 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 192.168.1.32 instead (on interface en1)
+2016-12-11 20:16:22 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-12-14 16:34:42 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-14 16:34:43 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 10.115.60.54 instead (on interface en1)
+2016-12-14 16:34:43 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-12-19 01:46:32 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-19 01:46:32 WARN  Utils:66 - Your hostname, koss resolves to a loopback address: 127.0.0.1; using 192.168.1.32 instead (on interface en1)
+2016-12-19 01:46:32 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
